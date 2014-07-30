@@ -1,0 +1,7 @@
+language: go
+notifications:
+    email:
+        recipients:
+          - niclas@walkbase.com
+        on_success: change
+        on_failure: always
