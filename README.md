@@ -4,6 +4,9 @@ flowdock
 A Go library for Flowdock's API
 
 
+[![GoDoc](https://godoc.org/github.com/njern/flowdock?status.png)](https://godoc.org/github.com/njern/flowdock)
+[![Build Status](https://travis-ci.org/njern/flowdock.png?branch=master)](https://travis-ci.org/njern/flowdock)<br>
+
 ## Usage
 
 
@@ -16,7 +19,7 @@ A Go library for Flowdock's API
     )
 
     const (
-        flowdockAPIKey = "YOUR API KEY GOES HERE" 
+        flowdockAPIKey = "YOUR API KEY GOES HERE"
         someFlowAPIKey = "A FLOW SPECIFIC API KEY"
     )
 
@@ -35,7 +38,7 @@ A Go library for Flowdock's API
 
         for {
             event := <-events
-            
+
             switch event := event.(type) {
             case flowdock.MessageEvent:
                 log.Printf("%s said (%s): '%s'", c.DetailsForUser(event.UserID).Nick, event.Flow, event.Content)
