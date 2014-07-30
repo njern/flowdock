@@ -5,3 +5,7 @@ notifications:
           - niclas@walkbase.com
         on_success: change
         on_failure: always
+go:
+  - 1.2
+  - 1.3
+  - tip
